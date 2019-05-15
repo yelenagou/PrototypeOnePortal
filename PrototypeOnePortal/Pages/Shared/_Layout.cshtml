@@ -31,7 +31,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index"><img id ="infinitiImage" src="~/assets/DevOpsInfinitySmaller.png" /></a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"><img id="infinitiImage" src="~/assets/DevOpsInfinitySmaller.png" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -56,29 +56,167 @@
                         <div class="input-group mb-3">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search">
                             @*<div class="input-group-append">
-                                <span class="btn input-group-text" type="submit"><i class="fa fa-search fa-search-plus"></i></span>
-                            </div>*@
-
+                                    <span class="btn input-group-text" type="submit"><i class="fa fa-search fa-search-plus"></i></span>
+                                </div>*@
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
                         </div>
-
                     </form>
                     @*<span style="font-size: 3em; color: Tomato;">
-                        <i class="fa fa-camera"></i>
-                    </span>*@
+                            <i class="fa fa-camera"></i>
+                        </span>*@
 
 
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
+        @*<div class="wrapper">
+
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Culture</h3>
+                    </div>
+                    <ul class="list-unstyled components">
+                        <p>Deliver Excellence</p>
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li>
+                                    <a href="#">Home 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Home 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Guilds</a>
+                        </li>
+                        <li>
+                            <a href="#">Culture Charter</a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div id="content">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+
+                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fa fa-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>*@
+        <div class="container-fluid">
+
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block bg-white sidebar">
+                <div class="sidebar-sticky">
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Delivery Excellence</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                <span data-feather="home"></span>
+                                Delivery Excellence <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="file"></span>
+                                Guilds
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="shopping-cart"></span>
+                                Culture Charter
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="users"></span>
+                                Storytelling
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="bar-chart-2"></span>
+                                Tech 2.0
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="layers"></span>
+                                Common Language
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="layers"></span>
+                                Change Champions
+                            </a>
+                        </li>
+                    </ul>
+
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>Coaching</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="file-text"></span>
+                                Coaching
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="file-text"></span>
+                                Accelerators
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="file-text"></span>
+                                Hangar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">
+                                <span data-feather="file-text"></span>
+                                Coaching Engagement
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+   
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2019 - PrototypeOnePortal - <a asp-area="" asp-page="/Privacy">Privacy</a>
@@ -89,6 +227,7 @@
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
         <script src="~/lib/fontawesome/js/all.js"></script>
+        <script src="~/js/site.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
@@ -103,6 +242,12 @@
                 crossorigin="anonymous"
                 integrity="sha256-E/V4cWE4qvAeO5MOhjtGtqDzPndRO1LBk8lJ/PR7CA4=">
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" asp-append-version="true"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+
+        </script>
+
+
     </environment>
     <script src="~/js/site.js" asp-append-version="true"></script>
 

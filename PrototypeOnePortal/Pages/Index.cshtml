@@ -3,19 +3,87 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<div class="jumbotron">
-    <h1 class="display-3 display-4-color">Know</h1>
-    <h2 class="display-4 display-4-color-darker">Discover. Share. Succeed.</h2>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+<partial name="_CookieConsentPartial" />
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3 display-4-color">Know</h1>
+        <h2 class="display-4 display-4-color-darker">Discover. Share. Succeed.</h2>
+        <p class="lead"></p>
+        <hr class="my-4">
+        <form class="form-inline my-2 my-lg-0">
+            <div class="input-group mb-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                @*<div class="input-group-append">
+                        <span class="btn input-group-text" type="submit"><i class="fa fa-search fa-search-plus"></i></span>
+                    </div>*@
+
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            </div>
+
+        </form>
+        @*<p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>*@
+    </div>
+</div>
+<div class="text-center text-color-blue">
+
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-header text-color-blue text-center display-4">Popular Subjects</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col"><a href="#">Common language</a></div>
+                <div class="col"><a href="#">Common language</a></div>
+                <div class="col"><a href="#">Common language</a></div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">All about Guilds</a></div>
+                <div class="col"><a href="#">All about Guilds</a></div>
+                <div class="col"><a href="#">All about Guilds</a></div>
+
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">Request coaching</a></div>
+                <div class="col"><a href="#">Request coaching</a></div>
+                <div class="col"><a href="#">Request coaching</a></div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col"><a href="#">Common language</a></div>
+                <div class="col"><a href="#">Common language</a></div>
+                <div class="col"><a href="#">Common language</a></div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">All about Guilds</a></div>
+                <div class="col"><a href="#">All about Guilds</a></div>
+                <div class="col"><a href="#">All about Guilds</a></div>
+
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">Request coaching</a></div>
+                <div class="col"><a href="#">Request coaching</a></div>
+                <div class="col"><a href="#">Request coaching</a></div>
+            </div>
+            <div class="row">
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+                <div class="col"><a href="#">Code Quality Analysis</a></div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="text-center">
-    <i class="fa fa-2x fa-search"></i>
-    <h1 class="display-4    ">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
