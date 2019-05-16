@@ -29,10 +29,12 @@ html {
             margin-left: 0;
         }
 }
-.jumbotron{
+
+.backgroundImageKnow {
     background-image: url("../assets/GP_MNT.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    
 }
 .display-4-color{
     color: #627A88;
